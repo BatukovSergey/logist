@@ -9,6 +9,15 @@ const actions = {
       .catch(error => {
         console.log(error)
       })
+  },
+  async newClient ({ commit }, client) {
+    await axios.post('http://127.0.0.1:3000/clients', client)
+      .then(response => {
+        commit('newClient', response.data)
+      })
+      .catch(error => {
+        console.log(error)
+      })
   }
 }
 

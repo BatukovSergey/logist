@@ -21,15 +21,13 @@ exports.findById = (req, res) => {
 }
 
 exports.create = (req, res) => {
-  let client = {
-    name: req.body.name
-  }
+  let client = req.body
   Clients.create(client, (err, result) => {
     if (err) {
       console.log(err)
       return res.sendStatus(500)
     }
-    res.sendStatus(client)
+    res.send(client)
   })
 }
 
