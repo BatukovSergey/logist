@@ -28,10 +28,18 @@ export default {
   max-width: max-content;
   display: flex;
   align-items: center;
+  &:hover {
+    .toggle_container {
+      border: 1px solid black;
+    }
+    .toggle_switch {
+      background: black;
+    }
+  }
   &_container {
     transition: all .3s;
     position: relative;
-    border: 1px solid $dark_gray;
+    border: 1px solid $light;
     width: 30px;
     height: 16px;
     border-radius: 10px;
@@ -52,7 +60,7 @@ export default {
     background-color: black;
   }
   &_contOn {
-    border-color: black;
+    // border-color: black;
   }
 }
 </style>
