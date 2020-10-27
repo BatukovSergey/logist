@@ -1,0 +1,154 @@
+{
+  "users": [
+    {
+      "id": "",
+      "name": "Иван Иванов",
+      "role": "Логист",
+      "photoURL": "",
+      "root": false
+    }
+  ],
+  "requests": [
+    {
+      "id": "",
+      "point": ["Москва", "Февральск","Питер"],
+      "peopleSum": 5,
+      "date": "",
+      "waiting": "",
+      "children": false,
+      "childrenSum": 0,
+      "escortSum": 0,
+      "coment": "",
+      "setDown": true,
+      "setDownDate": "",
+      "creatorID": "",
+      "closerID": "",
+      "oneOff": true,
+      "period": {
+        "startDate": "01.01.2020",
+        "endDate": "03.03.2020"
+      },
+      "roundSum": 3,
+      "clienID": "",
+      "price": 1000000,
+    }
+  ],
+  "clients": [
+    {
+      "id": "",
+      "name": "ФИО",
+      "type": "ЮР",
+      "contacts": "",
+      "pasrotNumber": "3023 0333201",
+      "address": "",
+      "CompanyName": "",
+      "INN": "",
+      "urAddresss": "",
+      "invoice": 2030220022222221,
+      "bank": "",
+      "BIC": 2333,
+      "corInvoice": 303030,
+      "invoices": [
+        {
+          "id": "",
+          "numder": "",
+          "date": "",
+          "price": 999,
+          "fromCompanyID": ""
+        }
+      ],
+      "contracts": ["url", "..."]
+    }
+  ],
+  "providers": [
+    {
+      "id": "",
+      "name": "ФИО",
+      "type": "ЮР",
+      "contacts": "",
+      "pasrotNumber": "3023 0333201",
+      "address": "",
+      "CompanyName": "",
+      "INN": "",
+      "urAddresss": "",
+      "invoice": 2030220022222221,
+      "bank": "",
+      "BIC": 2333,
+      "corInvoice": 303030,
+      "scanInvoice": "url",
+      "scanAct": "url",
+      "transports": [
+        {
+          "id": "",
+          "model": "",
+          "year": "",
+          "placeSum": "",
+          "photo": ["url", "url1", "..."],
+          "children": true,
+          "Number": ""
+        }
+      ],
+      "drivers": [
+        {
+          "id": "",
+          "name": "ФИО",
+          "contacts": "",
+          "license": "",
+          "startWork": ""
+        }
+      ],
+      "invoices": [
+        {
+          "id": "",
+          "numder": "",
+          "date": "",
+          "price": 999,
+          "forCompanyID": "",
+        }
+      ],
+      "contracts": ["url", "..."]
+    }
+  ],
+  "oursCompany": [
+    {
+      "id": "",
+      "director": {
+        "name": "",
+        "pasrotNumber": "3023 0333201",
+        "contacts": "",
+      },
+      "contacts": "",
+      "type": "ЮР",
+      "address": "",
+      "name": "",
+      "INN": "",
+      "urAddresss": "",
+      "invoice": 2030220022222221,
+      "bank": "",
+      "BIC": 2333,
+      "corInvoice": 303030,
+      "scanInvoice": "url",
+      "scanAct": "url",
+      "transports": [
+        {
+          "id": "",
+          "model": "",
+          "year": "",
+          "placeSum": "",
+          "photo": ["url", "url1", "..."],
+          "children": true,
+          "Number": ""
+        }
+      ],
+      "drivers": [
+        {
+          "id": "",
+          "name": "ФИО",
+          "contacts": "",
+          "license": "",
+          "startWork": ""
+        }
+      ]
+    }
+  ]
+}
