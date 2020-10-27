@@ -1,7 +1,7 @@
 <template lang="pug">
   .input
     input(v-model='value' :type='type' @input='setValue()' :placeholder='placeholder')
-    .input_clear(@click='value = null')
+    .input_clear(v-if='value != null' @click='value = null')
 </template>
 <script>
 export default {
@@ -23,21 +23,26 @@ export default {
 @import '../../scss/variables.scss';
 .input {
   position: relative;
-  margin: 10px;
   input {
     width: 100%;
     border: none;
     background: $light;
-    border-radius: 10px;
     padding: 10px 20px;
+    padding-right: 40px;
   }
   &_clear {
     position: absolute;
-    top:0;
-    right: 0;
+    transition: all ease 0.3s;
+    transform: rotate(90deg);
+    cursor: pointer;
+    top:8px;
+    right: 10px;
     width: 20px;
     height: 20px;
-    background: red;
+    background-image: url('../../assets/img/icons/cancel.svg');
+    &:hover {
+      transform: rotate(0deg);
+    }
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template lang='pug'>
   .form
-    p {{ clients }}
+    h2 Новый клиент
     Input(:type='"text"' @setValue='client.name = $event' :placeholder='"ФИО"')
     Input(:type='"text"' @setValue='client.type = $event' :placeholder='"Тип"')
     Input(:type='"number"' @setValue='client.pasport = $event' :placeholder='"Паспорт"')
@@ -15,7 +15,6 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
 import Input from '../ui/Input'
 
 export default {
@@ -42,9 +41,6 @@ export default {
         contracts: []
       }
     }
-  },
-  computed: {
-    ...mapGetters(['clients'])
   },
   methods: {
     newClient () {

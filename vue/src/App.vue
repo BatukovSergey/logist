@@ -1,12 +1,22 @@
 <template lang='pug'>
   #app
-    router-view.wrapper
+    .wrapper
+      router-view
+    pre {{ clients }}
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
-  name: "app"
+  name: "app",
+  computed: {
+    ...mapGetters(['clients'])
+  },
 }
 </script>
 <style lang="scss">
+pre {
+  font-size: 10px;
+}
 </style>

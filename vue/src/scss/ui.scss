@@ -1,0 +1,36 @@
+@import './variables.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+.form {
+  background-color:white;
+  border: 1px solid $light;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 40px;
+  h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  .input {
+    margin-bottom: 10px;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  max-width: max-content;
+  padding: 10px 20px;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
+}
