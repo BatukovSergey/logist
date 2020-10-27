@@ -60,7 +60,7 @@ export default {
     background-color: black;
   }
   &_contOn {
-    // border-color: black;
+    border-color: $dark_gray;
   }
 }
 </style>
