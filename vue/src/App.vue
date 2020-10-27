@@ -3,7 +3,18 @@
     .wrapper
       NavPanel
       router-view
-    //- pre {{ clients }}
+      .clients
+        .client(v-for='(client, i) in clients')
+          span {{ client.name }}
+          span {{ client.UR }}
+          span {{ client.pasport }} 
+          span {{ client.adres }}
+          span {{ client.company }}
+          span {{ client.INN }}
+          span {{ client.urAdres }}
+          span {{ client.invoice }}
+          span {{ client.bank }}
+          span {{ client.BIC }}
 </template>
 
 <script>
@@ -21,7 +32,15 @@ export default {
 }
 </script>
 <style lang="scss">
-pre {
+.clients {
+  width: 100vw;
+  display: flex;
+}
+.client {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
   font-size: 10px;
+  border: 1px solid gray;
 }
 </style>
