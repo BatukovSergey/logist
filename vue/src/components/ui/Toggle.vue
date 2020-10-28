@@ -40,27 +40,30 @@ export default {
     transition: all .3s;
     position: relative;
     border: 1px solid $light;
-    width: 30px;
-    height: 16px;
-    border-radius: 10px;
-    padding: 2px;
+    width: 25px;
+    height: 14px;
+    border-radius: 2px;
   }
   &_switch {
+    border-radius: 1px;
+    position: absolute;
     transition: all .3s;
+    top: 1px;
+    left: 1px;
     width: 10px;
     height: 10px;
-    border-radius: 10px;
     background-color: $dark_gray;
   }
   &_name {
     margin-left: 10px;
   }
   &_on {
-    width: 100%;
-    background-color: black;
+    left: calc(100% - 11px);
+    background-color: white !important;
   }
   &_contOn {
-    border-color: $dark_gray;
+    border-color: black;
+    background: black;
   }
 }
 </style>
