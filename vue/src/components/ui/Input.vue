@@ -35,8 +35,8 @@ export default {
     transition: all ease 0.3s;
     transform: rotate(90deg);
     cursor: pointer;
-    top:8px;
-    right: 10px;
+    top:6px;
+    right: 6px;
     width: 20px;
     height: 20px;
     background-image: url('../../assets/img/icons/cancel.svg');

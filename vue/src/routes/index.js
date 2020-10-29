@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import NewClient from '../components/client/NewClient'
+import Admin from '../components/Admin'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'New client',
-    component: NewClient
+    name: 'Admin',
+    component: Admin
   }
 ]
 

@@ -2,9 +2,6 @@
 
 .wrapper {
   display: flex;
-  flex-direction: column;
-  // justify-content: center;
-  align-items: center;
   width: 100vw;
 }
 .form {
@@ -12,7 +9,7 @@
   border: 1px solid $light;
   display: flex;
   flex-direction: column;
-  width: 500px;
+  // width: 500px;
   padding: 40px;
   h2 {
     margin-bottom: 20px;
@@ -20,6 +17,9 @@
   }
   .input, .toggle {
     margin-bottom: 10px;
+  }
+  button {
+    align-self: flex-end;
   }
 }
 
