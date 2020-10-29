@@ -4,7 +4,6 @@
       a(
         v-for='(button, i) in buttons'
         :href='button.link'
-        @click='fullScreen()'
         ) {{ button.text }}
     .nav_right
       Icon(:name='"notification"' :margin='"0 10px 0 0"')
@@ -55,7 +54,7 @@ export default {
         {
           text: 'Клиенты',
           icon: '123',
-          link: '#'
+          link: '#/clients'
         },
         {
           text: 'Сотрудники',
