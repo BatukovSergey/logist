@@ -2,8 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const app = express()
 const db = require('./db')
-const clientsController = require('./controlers/clients')
-const orderController = require('./controlers/order')
+const controller = require('./controler')
 const cors = require('cors');
 let port = 3000
 
@@ -16,17 +15,17 @@ app.get('/', (req, res) => {
   res.send('Logist API')
 })
 
-app.get('/clients', clientsController.all)
-app.get('/clients/:id', clientsController.findById)
-app.post('/clients', clientsController.create)
-app.put('/clients/:id', clientsController.update)
-app.delete('/clients/:id', clientsController.delete)
+app.get('/clients', controller.all)
+app.get('/clients/:id', controller.findById)
+app.post('/clients', controller.create)
+app.put('/clients/:id', controller.update)
+app.delete('/clients/:id', controller.delete)
 
-app.get('/orders', orderController.all)
-app.get('/orders/:id', orderController.findById)
-app.post('/orders', orderController.create)
-app.put('/orders/:id', orderController.update)
-app.delete('/orders/:id', orderController.delete)
+app.get('/orders', controller.all)
+app.get('/orders/:id', controller.findById)
+app.post('/orders', controller.create)
+app.put('/orders/:id', controller.update)
+app.delete('/orders/:id', controller.delete)
 
 db.connect(
   'mongodb://localhost:27017/logist',
