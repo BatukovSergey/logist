@@ -57,3 +57,17 @@ exports.delete = (err, res) => {
     res.sendStatus(200)
   })
 }
+
+// exports.auth = (req, res) => {
+//   let user = {
+//     login:req.params.login, 
+//     password: req.body.password
+//   }
+//   Model.auth(user, (err, doc) => {
+//     if (err) {
+//       console.log(err)
+//       return res.sendStatus(500)
+//     }
+//     res.send(doc)
+//   })
+// }

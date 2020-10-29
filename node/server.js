@@ -27,6 +27,8 @@ app.post('/orders', controller.create)
 app.put('/orders/:id', controller.update)
 app.delete('/orders/:id', controller.delete)
 
+// app.put('/users/:login', controller.auth)
+
 db.connect(
   'mongodb://localhost:27017/logist',
   (err) => {

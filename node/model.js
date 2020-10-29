@@ -33,3 +33,9 @@ exports.delete = (params, cb) => {
     }
   )
 }
+
+// exports.auth = (login, cb) => {
+//   db.get().collection('users').findOne({ _id: ObjectID(params.login) }, (err, doc) => {
+//     cb(err, doc)
+//   })
+// }
